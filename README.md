@@ -1,6 +1,6 @@
 # How to Wekan Kanban Board 🎓
 
-[How to GraphQL](https://wekan.team) is a complete tutorial website to learn all about Wekan and Kanban Board Managment! It was built on top of  [Meteor](https://www.meteor.com/) and many amazing contributors. All content on the site is completely free and open-source.
+[How to Wekan](https://wekan.team) is a complete tutorial website to learn all about Wekan and Kanban Board Managment! It was built on top of  [Meteor](https://www.meteor.com/) and many amazing contributors. All content on the site is completely free and open-source.
 
 [![](https://raw.githubusercontent.com/saurabharch/wekanhow/master/src/assets/graphics/first-look.png)](https://wekan.team)
 
@@ -10,29 +10,16 @@ The content for all tutorials is located in the  [`/content`](https://github.com
 
 #### GraphQL
 
-- Fundamentals of GraphQL
-- Advanced GraphQL
+- (Coming Soon)
+
 
 #### Frontend
 
-- React & Apollo
-- React & Relay
-- Vue & Apollo
-- Ember & Apollo
-- Expo & Apollo (Coming Soon)
-- Angular & Apollo (Coming Soon)
-- VulcanJS (Coming Soon)
+- (Coming Soon)
 
 #### Backend
 
-- Prisma
-- graphql-js / JavaScript
-- Absinthe / Elixir
-- graphql-ruby / Ruby
-- graphql-java / Java
-- Graphene / Python
-- Sangria / Scala (Coming Soon)
-- graphql-go / Go (Coming Soon)
+- (Coming Soon)
 
 ## Contributions / Fixes
 
