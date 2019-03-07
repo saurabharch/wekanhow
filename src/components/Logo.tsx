@@ -6,9 +6,10 @@ export default function Logo() {
     <div className="logo-wrapper">
       <style jsx={true}>{`
         .logo {
-          @p: .flex, .ttu, .fw6, .itemsCenter, .pink;
+          @p: .flex, .ttu, .fw6, .itemsCenter;
           z-index: 10102;
           font-size: 17px;
+          color:#0079bf;
         }
         .logo img {
           @p: .mr10;
@@ -27,7 +28,7 @@ export default function Logo() {
       <Link to="/">
         <div className="logo">
           <img src={require('../assets/icons/howtographql.svg')} alt="" />
-          <span>How to GraphQL</span>
+          <span>Wekan Docs</span>
         </div>
       </Link>
     </div>

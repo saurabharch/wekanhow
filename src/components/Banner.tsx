@@ -1,9 +1,9 @@
 import * as React from 'react'
-import GraphQLConf from '../assets/icons/GraphQLConf'
+import WekanConf from '../assets/icons/WekanConf'
 import LinkArrow from '../assets/icons/LinkArrow'
 
 export const Banner = () =>
-  <a className="banner" href="https://www.graphqlconf.org/" target="_blank">
+  <a className="banner" href="https://demo.sandstorm.io/appdemo/m86q05rdvj14yvn78ghaxynqz7u2svw6rnttptxx49g1785cdv1h" target="_blank">
 
     <style jsx={true}>
       {`
@@ -31,9 +31,9 @@ export const Banner = () =>
         }
       `}
     </style>
-    <GraphQLConf />
+    <WekanConf />
     <span className="title">
-      Tickets are now available for <span className="bold">GraphQL Conf!</span>
+      Try Wekan in Action with Sandstorm <span className="bold">Here!</span>
     </span>
     <span className="link-arrow-wrapper">
       <LinkArrow />

@@ -35,4 +35,4 @@ Here's an overview of the frontend tutorials we offer:
 
 ### Contribute a Tutorial
 
-Don't find the tutorial with your favorite technology? Maybe you want to contribute and create it yourself? [Get in touch!](mailto:nikolas@graph.cool)
+Don't find the tutorial with your favorite technology? Maybe you want to contribute and create it yourself? [Get in touch!](mailto:saurabh@raindigi.com)

@@ -44,9 +44,9 @@ export default class Sidebar extends React.Component<Props, {}> {
       )
     }
 
-    const isGraphQLChapter = ['basics', 'advanced'].includes(group)
+    const isWekanChapter = ['basics', 'advanced'].includes(group)
     const isChooseTutorial = location.pathname.includes('/choose')
-    const showChoose = isGraphQLChapter || isChooseTutorial
+    const showChoose = isWekanChapter || isChooseTutorial
 
     return (
       <div className="sidebar-container">
@@ -97,14 +97,14 @@ export default class Sidebar extends React.Component<Props, {}> {
               highlightFirst={false}
               showLast={false}
               onClickLink={this.props.onClickLink}
-              pinkBorder={!isGraphQLChapter}
+              pinkBorder={!isWekanChapter}
             />
             <OptionalSteps
               location={location}
               steps={steps.advanced}
               small={true}
               showDuration={false}
-              mainPink={!isGraphQLChapter}
+              mainPink={!isWekanChapter}
               onClickLink={this.props.onClickLink}
             />
             {showChoose
@@ -113,7 +113,7 @@ export default class Sidebar extends React.Component<Props, {}> {
                   {tutorialTitle &&
                     <TutorialTitleStep
                       title={tutorialTitle}
-                      pinkLine={!isGraphQLChapter}
+                  pinkLine={!isWekanChapter}
                     />}
                   <Steps
                     steps={selectedSteps}

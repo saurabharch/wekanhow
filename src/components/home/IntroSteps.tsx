@@ -59,20 +59,20 @@ export default function IntroSteps({ steps, location }: Props) {
       <div className="steps-content">
         <LeftColumn className="steps-description" light={true}>
           <div className="basic-graphql">
-            <h3>GraphQL Fundamentals</h3>
+            <h3>Wekan Fundamentals</h3>
             <div className="duration">
               <Duration duration={basicsDuration} total={true} />
             </div>
             <p>
               In the first chapter, you’ll learn about
-              the core concepts of GraphQL. {' '}
+              the core concepts of Wekan Kanban Board, a Scrum managment tool. {' '}
             </p>
           </div>
           <div className="advanced-graphql">
-            <h3>Advanced GraphQL (optional)</h3>
+            <h3>Advanced Wekan (optional)</h3>
             <p>
               Read this chapter to get a broader
-              understanding of the GraphQL ecosystem.
+              understanding of the Wekan ecosystem.
             </p>
           </div>
         </LeftColumn>

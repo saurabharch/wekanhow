@@ -1,12 +1,12 @@
-# How to GraphQL 🎓
+# How to Wekan Kanban Board 🎓
 
-[How to GraphQL](https://www.howtographql.com) is a fullstack tutorial website to learn all about GraphQL! It was built by [Prisma](https://www.prisma.io) and many amazing contributors. All content on the site is completely free and open-source.
+[How to GraphQL](https://wekan.team) is a complete tutorial website to learn all about Wekan and Kanban Board Managment! It was built on top of  [Meteor](https://www.meteor.com/) and many amazing contributors. All content on the site is completely free and open-source.
 
-[![](http://i.imgur.com/67oYe9q.png)](https://www.howtographql.com)
+[![](https://media.discordapp.net/attachments/501025191913062401/553254904735596544/first-look.png?width=723&height=406)](https://wekan.team)
 
 ## Content
 
-The content for all tutorials is located in the  [`/content`](https://github.com/howtographql/howtographql/tree/master/content) directory. Here is an overview of all the tutorials that are available at the moment:
+The content for all tutorials is located in the  [`/content`](https://github.com/saurabharch/wekanhow/tree/master/content) directory. Here is an overview of all the tutorials that are available at the moment:
 
 #### GraphQL
 
@@ -36,15 +36,15 @@ The content for all tutorials is located in the  [`/content`](https://github.com
 
 ## Contributions / Fixes
 
-As the whole project is open-source, you're more than welcome to fix typos and other small issues yourself and create a PR for the fix. If you want to contribute a whole tutorial track, please [get in touch](mailto:burk@prisma.io).
+As the whole project is open-source, you're more than welcome to fix typos and other small issues yourself and create a PR for the fix. If you want to contribute a whole tutorial track, please [get in touch](mailto:saurabh@raindigi.com).
 
 ## Installation & Running locally
 
 You can run a local instance of How to GraphQL by executing the following commands in a terminal:
 
 ```sh
-git clone git@github.com:howtographql/howtographql.git
-cd howtographql
+git clone git@github.com:saurabharch/wekanhow.git
+cd wekanhow
 yarn install
 yarn start # http://localhost:8000/
 ```

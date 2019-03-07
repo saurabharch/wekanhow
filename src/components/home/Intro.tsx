@@ -26,15 +26,15 @@ class Intro extends React.Component<Props, null> {
               {
                 particles: {
                   number: {value: 20, density: {enable: !0, value_area: 800}},
-                  color: {value: "#ffc0e5"},
+                  color: { value: "#777" },
                   shape: {
                     type: "circle",
-                    stroke: {width: 4, color: "#fdd7ed"},
+                    stroke: { width: 4, color: "#0079bf"},
                     polygon: {nb_sides: 5}
                   },
                   opacity: {value: .2, random: !1, anim: {enable: !1, speed: 1, opacity_min: .6, sync: !1}},
                   size: {value: 1, random: !0, anim: {enable: !1, speed: 40, size_min: .1, sync: !1}},
-                  line_linked: {enable: !0, distance: 150, color: "#ffc0e5", opacity: .3, width: 1},
+                  line_linked: { enable: !0, distance: 150, color: "#777", opacity: .3, width: 1},
                   move: {
                     enable: !0,
                     speed: 1,
@@ -121,11 +121,18 @@ class Intro extends React.Component<Props, null> {
           .btn-container {
             @p: .mt25;
           }
+           .headerTitle {
+            text-transform: uppercase;
+            background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size:5rem;
+           }
         `}</style>
         <div className="rest">
-          <h1>The Fullstack Tutorial for GraphQL</h1>
+          <h1 className="headerTitle">Wekan Kanban Board</h1>
           <p>
-            The free and open-source tutorial to learn all around GraphQL to go from
+            The free and open-source tutorial and setup guide to learn all around Wekan to go from
             zero to production.
           </p>
           <div className="center-container">

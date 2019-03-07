@@ -35,18 +35,18 @@ export default function Footer() {
       `}</style>
       <span>
         Made with <span className="love"> ♥ </span> by{' '}
-        <a href="https://www.prisma.io" target="_blank">Prisma</a> and the
+        <a href="https://www.wekan.team" target="_blank">Wekan</a> and the
         amazing
-        GraphQL community
+        Wekan community
       </span>
       <div className="logos">
-        <a href="https://slack.prisma.io" target="_blank">
+        {/* <a href="https://slack.prisma.io" target="_blank">
           <img src={require('../../assets/icons/slack.svg')} alt="" />
-        </a>
-        <a href="https://twitter.com/prisma" target="_blank">
+        </a> */}
+        <a href="https://twitter.com/wekan" target="_blank">
           <img src={require('../../assets/icons/twitter.svg')} alt="" />
         </a>
-        <a href="https://github.com/howtographql/howtographql" target="_blank">
+        <a href="https://github.com/wekan/wekan" target="_blank">
           <Icon
             src={require('graphcool-styles/icons/fill/github.svg')}
             color={$v.black}

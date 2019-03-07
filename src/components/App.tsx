@@ -172,7 +172,7 @@ export default function App({ children, history, steps, location }: Props) {
           background-repeat: no-repeat;
           border: solid 2px #e00083;
           padding: 17px 30px 19px;
-          border-radius: 6px;
+          border-radius: 10rem;
           transition: background-position .25s ease, box-shadow .25s ease;
         }
         .btn.green {

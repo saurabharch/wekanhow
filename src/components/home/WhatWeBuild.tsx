@@ -50,6 +50,7 @@ export default function WhatWeBuild() {
 
             p.c {
               text-align: left!important;
+              
             }
 
             div.preview {
@@ -61,18 +62,18 @@ export default function WhatWeBuild() {
               width: 100%;
               height: auto;
               @p: .mt38;
+              
             }
           }
         `}</style>
-        <h2>What you'll build: A Hackernews clone</h2>
-        <p className="c">
-          Start from scratch and build a fully-featured Hackernews clone with one of the 
-          detailed step-by-step tutorials. Use the programming language and framework of your choice!
+        <h2>How your Swimlane Scrum Board Look Like</h2>
+        <p className="c banner">
+          A fully Fatured Kanban Board for Agile Project Managment
         </p>
         <div className="preview">
           <img
-            src={require('../../assets/graphics/hackernews-preview.png')}
-            alt=""
+            src={require('../../assets/graphics/wekan-markdown.png')}
+            alt="wekan-showcase"
           />
           <div className="points">
             <div className="point">

@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default function CustomHelmet({ title, description, overrideDescription }: Props) {
-  const image = 'https://www.howtographql.com/social.png'
+  const image = 'https://wekan.github.io/wekan-logo.svg'
   return (
     <Helmet
       title={title}

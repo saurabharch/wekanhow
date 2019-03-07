@@ -75,7 +75,7 @@ export default class LandingPlayground extends React.Component<{}, State> {
             transition: opacity 300ms ease-in;
           }
         `}</style>
-        <h1>Never tried GraphQL before?</h1>
+        <h1>Never tried Wekan before?</h1>
         <p>Time to run your first query in the Playground…</p>
         <div className="graphiql">
           <MarkdownGraphiQL
@@ -98,7 +98,7 @@ export default class LandingPlayground extends React.Component<{}, State> {
               <div>
                 <h3>That was easy, wasn't it?</h3>
                 <Link to="/advanced/0-clients/">
-                  <div className="btn small">Learn how to use GraphQL</div>
+                  <div className="btn small">Learn how to use Wekan</div>
                 </Link>
               </div>
             </div>}

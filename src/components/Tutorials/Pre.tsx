@@ -24,7 +24,7 @@ function getGithubLink(group: string, path?: string) {
   const firstSlash = trimmedPath.indexOf('/')
   const normalizedPath = trimmedPath.slice(firstSlash + 1, trimmedPath.length)
 
-  return `https://github.com/howtographql/${group}/blob/master/${normalizedPath}`
+  return `https://github.com/saurabharch/${group}/blob/master/${normalizedPath}`
 }
 
 export default function Pre({

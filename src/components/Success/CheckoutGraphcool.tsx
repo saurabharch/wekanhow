@@ -67,8 +67,8 @@ export default function CheckoutGraphcool() {
           <h1>Next step: Build something in production.</h1>
           <p>
             Use your new knowledge and start building a production app.
-            Prisma
-            provides everything you need to build the backend for your next
+            Wekan
+            provides everything you need to build the backend for your Scrum project
             project.
           </p>
           <a

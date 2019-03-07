@@ -70,13 +70,13 @@ export default function ContentOverview({ location, steps }: Props) {
           <div className="overview">
             <div className="block left">
               <Stack
-                name="GraphQL Fundamentals"
+                name="Wekan Fundamentals"
                 steps={steps.basics}
                 location={location}
               />
               <div className="advanced">
                 <Stack
-                  name="Advanced GraphQL"
+                  name="Advanced Wekan"
                   steps={steps.advanced}
                   location={location}
                 />

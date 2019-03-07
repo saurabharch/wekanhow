@@ -57,17 +57,17 @@ export default class Nav extends React.Component<Props, {}> {
           }
         `}</style>
         <div className="element">
-          <span>GraphQL</span>
+          <span>Wekan</span>
           <span className="triangle">▾</span>
           <Dropdown>
             <div className="graphql">
               <Stack
-                name="GraphQL Fundamentals"
+                name="Wekan Fundamentals"
                 steps={steps.basics}
                 location={location}
               />
               <Stack
-                name="Advanced GraphQL"
+                name="Advanced Wekan"
                 steps={steps.advanced}
                 location={location}
               />
@@ -101,7 +101,7 @@ export default class Nav extends React.Component<Props, {}> {
         </div>
         <a
           className="element github"
-          href="https://github.com/howtographql/howtographql"
+          href="https://github.com/wekan/wekan"
           target="_blank"
         >
           <Icon

@@ -1,4 +1,4 @@
-# Writing Guidelines for HowToGraphQL Tutorial Tracks
+# Writing Guidelines for Wekan Tutorial Tracks
 
 This document describes writing guidelines and best practices for the HTG tutorial tracks (frontend + backend).
 
@@ -6,7 +6,7 @@ This document describes writing guidelines and best practices for the HTG tutori
 
 Your tutorial should be divided into shorter _chapters_. Each chapter needs to be a single markdown document. The name of each document has to be predended with the index of the chapter, starting at 0.
 
-[Here](https://github.com/howtographql/howtographql/tree/master/content/frontend/react-apollo) is what the example structure for the React+Apollo tutorial looks like: 
+[Here](https://github.com/saurabharch/wekanhow/tree/master/content/frontend/react-apollo) is what the example structure for the React+Apollo tutorial looks like: 
 
 ![](http://imgur.com/nGsYY1E.png)
 
@@ -20,7 +20,7 @@ Also notice that each single chapter needs to have a **frontmatter** with the fo
 
 `question`, `answers` and `correctAnswer` define the multiple choice question that will be displayed to the reader at the end of each chapter.
 
-[Here](https://github.com/howtographql/howtographql/blob/master/content/graphql/basics/1-graphql-is-the-better-rest.md) is an example for the frontmatter:
+[Here](https://github.com/saurabharch/wekanhow/blob/master/content/wekan-wiki/basics/1-graphql-is-the-better-rest.md) is an example for the frontmatter:
 
 ```
 ---

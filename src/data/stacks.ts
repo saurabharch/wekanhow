@@ -109,7 +109,37 @@ const data: Stack[] = [
     authorName: 'Nikolas Burk',
     beginnersChoice: true,
   },
-
+  {
+    title: 'Wekan',
+    type: 'backend',
+    key: 'wekan',
+    images: [
+      require('../assets/icons/react.svg'),
+      require('../assets/icons/apollo.svg'),
+    ],
+    content: {
+      title: 'Wekan',
+      description:
+        'Learn how to get deployment of back-end server',
+    },
+    authorName: 'saurabh kashyap',
+    beginnersChoice: true,
+  },
+  {
+    title: 'Wekan',
+    type: 'frontend',
+    key: 'wekan',
+    images: [
+      require('../assets/icons/howtographql.svg')
+    ],
+    content: {
+      title: 'Wekan',
+      description:
+        'Learn how to get started with wekan kanban board on the frontend',
+    },
+    authorName: 'saurabh kashyap',
+    beginnersChoice: true,
+  },
   {
     title: 'graphql-node',
     type: 'backend',

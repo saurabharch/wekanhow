@@ -68,7 +68,7 @@ The schema is a contract between the frontend and backend, so keeping it at the 
 Most of the HowToGraphQL tutorials are based on the same schema. In our tutorial we will try to run scala server which supports that schema. In this case you can take any frontend example and connect it to our server.
 The schema more or less looks like this:
 
-```graphql(nocopy)(https://github.com/howtographql/howtographql/blob/master/meta/structure.graphql)
+```graphql(nocopy)(https://github.com/saurabharch/wekanhow/blob/master/meta/structure.graphql)
 type Query {
   allLinks(filter: LinkFilter, orderBy: LinkOrderBy, skip: Int, first: Int): [Link!]!
   _allLinksMeta: _QueryMeta!

@@ -4,7 +4,7 @@ endpoint: ${endpoint}
 disabled: false
 ---
 {
-  Movie(id: "cixos5gtq0ogi0126tvekxo27") {
+  Board(id: "cixos5gtq0ogi0126tvekxo27") {
     id
     title
     actors {
@@ -15,24 +15,24 @@ disabled: false
 ---
 {
   "data": {
-    "Movie": {
+    "Board": {
       "id": "cixos5gtq0ogi0126tvekxo27",
-      "title": "Inception",
+      "title": "Website - Pages",
       "actors": [
         {
-          "name": "Leonardo DiCaprio"
+          "name": "Home - page"
         },
         {
-          "name": "Ellen Page"
+          "name": "Contact - page"
         },
         {
-          "name": "Tom Hardy"
+          "name": "Services - page"
         },
         {
-          "name": "Joseph Gordon-Levitt"
+          "name": "Aboutus - page"
         },
         {
-          "name": "Marion Cotillard"
+          "name": "Solutions - page"
         }
       ]
     }

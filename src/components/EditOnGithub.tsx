@@ -17,7 +17,7 @@ export default function EditOnGithub({ post }: Props) {
   const stackTypeString = slug.includes('choose') || slug.includes('success')
     ? ''
     : `/${stackType}`
-  const link = `https://github.com/howtographql/howtographql/tree/master/content${stackTypeString}${removeTrailingSlash(
+  const link = `https://github.com/saurabharch/wekanhow/tree/master/content${stackTypeString}${removeTrailingSlash(
     slug,
   )}.md`
   return (

@@ -58,7 +58,7 @@ export default function Share() {
         <p>We're open-source and would love your support.</p>
         <a
           className="button gh"
-          href="https://github.com/howtographql/howtographql"
+          href="https://github.com/wekan/wekan"
           target="_blank"
         >
           <Icon
