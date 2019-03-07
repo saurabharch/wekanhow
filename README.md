@@ -2,7 +2,7 @@
 
 [How to GraphQL](https://wekan.team) is a complete tutorial website to learn all about Wekan and Kanban Board Managment! It was built on top of  [Meteor](https://www.meteor.com/) and many amazing contributors. All content on the site is completely free and open-source.
 
-[![](https://media.discordapp.net/attachments/501025191913062401/553254904735596544/first-look.png?width=723&height=406)](https://wekan.team)
+[![](https://raw.githubusercontent.com/saurabharch/wekanhow/master/src/assets/graphics/first-look.png)](https://wekan.team)
 
 ## Content
 
