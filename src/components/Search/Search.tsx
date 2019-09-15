@@ -63,7 +63,7 @@ class Search extends React.Component<Props, State> {
   constructor(props) {
     super(props)
     this.client = algolia('IY3ZFDIVWH', '1fa689b14c46101df00641af78a8e1d6')
-    this.index = this.client.initIndex('howtographql')
+    this.index = this.client.initIndex('wekan_dev')
 
     this.state = {
       focused: false,
