@@ -10,7 +10,7 @@ const compilerDefaults = {
 
 module.exports.resolvableExtensions = () => [`.ts`, `.tsx`]
 
-module.exports.modifyWebpackConfig = ({ config }, { compilerOptions }) => {
+module.exports.onCreateWebpackConfig = ({ config }, { compilerOptions }) => {
   // CommonJS to keep Webpack happy.
   const copts = Object.assign({}, compilerDefaults, compilerOptions, {
     module: `commonjs`,

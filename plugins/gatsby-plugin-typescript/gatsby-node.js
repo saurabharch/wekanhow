@@ -26,7 +26,7 @@ module.exports.resolvableExtensions = function () {
   return [`.ts`, `.tsx`];
 };
 
-module.exports.modifyWebpackConfig = function (_ref, _ref2) {
+module.exports.onCreateWebpackConfig = function (_ref, _ref2) {
   var config = _ref.config;
   var compilerOptions = _ref2.compilerOptions;
 
