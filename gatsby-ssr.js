@@ -1,9 +1,9 @@
-import React from 'react'
-import { Provider } from 'react-redux'
-import { renderToString } from "react-dom/server"
+const React = require('react')
+const { Provider } = require('react-redux')
+const { renderToString } = require("react-dom/server")
 
 
-import createStore from './src/createStore'
+const createStore = require('./src/createStore').default()
 
 exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString }) => {
 

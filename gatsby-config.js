@@ -38,6 +38,7 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `styled-jsx-plugin`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-postcss`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {

@@ -48,7 +48,7 @@ class StackChooser extends React.Component<Props, {}> {
     })
 
     return (
-      <div className="stack-chooser">
+      <div className="stack-chooser" id="stack-chooser">
         <style jsx={true}>{`
           .stack-chooser {
             @p: .overflowHidden;

@@ -22,14 +22,14 @@
 //
 //
 
-import React from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
-import { Provider } from 'react-redux'
-import Promise from 'promise-polyfill'
+const React = require('react')
+const { BrowserRouter } = require('react-router-dom')
+const { Provider } = require('react-redux')
+const Promise  = require('promise-polyfill')
 
-import createStore from './src/createStore'
+const createStore = require('./src/createStore').default();
 
-exports.replaceRouterComponent = ({ history }) => {
+ exports.replaceRouterComponent = ({ history }) => {
   const store = createStore()
 
   if (typeof Raven !== 'undefined') {
@@ -43,7 +43,7 @@ exports.replaceRouterComponent = ({ history }) => {
 
   const ConnectedRouterWrapper = ({ children }) => (
     <Provider store={store}>
-      <Router history={history}>{children}</Router>
+      <BrowserRouter history={history}>{children}</BrowserRouter>
     </Provider>
   )
 
