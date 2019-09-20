@@ -1,6 +1,6 @@
 {
   "resolutions": {
-    "graphql": "0.8.2"
+    "graphql": "0.11.7"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
     "gatsby-transformer-remark": "^2.6.10",
     "graphcool-graphiql": "^1.8.13",
     "graphcool-styles": "^0.2.10",
-    "graphql": "^0.8.2",
+    "graphql": "^0.11.7",
     "graphql-request": "^1.2.0",
     "lodash": "^4.17.4",
     "node-fetch": "^2.6.0",
