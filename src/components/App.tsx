@@ -2,7 +2,7 @@ import * as React from 'react'
 import Header from './Header'
 import Overlay from './Overlay'
 import Search from './Search/Search'
-import { Step } from '../types'
+import { MarkdownRemark, Step } from '../types'
 import MobileMenu from './MobileMenu'
 import OverviewVideoModal from './OverviewVideoModal'
 import Logo from './Logo'
@@ -10,12 +10,13 @@ import '../utils/polyfill'
 
 interface Props {
   children?: JSX.Element
+  post?: MarkdownRemark
   history: any
   steps: { [key: string]: Step[] }
   location: any
 }
 
-export default function App({ children, history, steps, location }: Props) {
+export default function App({ children, history, steps, post, location }: Props) {
   return (
     <div>
       <style jsx={true} global={true}>{`
@@ -172,7 +173,7 @@ export default function App({ children, history, steps, location }: Props) {
           background-repeat: no-repeat;
           border: solid 2px #e00083;
           padding: 17px 30px 19px;
-          border-radius: 10rem;
+          border-radius: 6px;
           transition: background-position .25s ease, box-shadow .25s ease;
         }
         .btn.green {
@@ -230,7 +231,7 @@ export default function App({ children, history, steps, location }: Props) {
       <Overlay />
       <OverviewVideoModal />
       <Search history={history} location={location} />
-      <MobileMenu steps={steps} location={location} />
+      <MobileMenu steps={steps} post={post} location={location} />
       <Header steps={steps} location={location} />
       <div className="mobile-logo">
         <Logo />

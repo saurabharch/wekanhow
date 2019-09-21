@@ -13,6 +13,7 @@ interface Props {
   post?: MarkdownRemark
   location: any
   onClickLink?: () => void
+  onRef?: (el: HTMLElement) => void
 }
 
 export default class Sidebar extends React.Component<Props, {}> {
@@ -44,9 +45,9 @@ export default class Sidebar extends React.Component<Props, {}> {
       )
     }
 
-    const isWekanChapter = ['basics', 'advanced'].includes(group)
+    const isGraphQLChapter = ['basics', 'advanced'].includes(group)
     const isChooseTutorial = location.pathname.includes('/choose')
-    const showChoose = isWekanChapter || isChooseTutorial
+    const showChoose = isGraphQLChapter || isChooseTutorial
 
     return (
       <div className="sidebar-container">
@@ -97,32 +98,32 @@ export default class Sidebar extends React.Component<Props, {}> {
               highlightFirst={false}
               showLast={false}
               onClickLink={this.props.onClickLink}
-              pinkBorder={!isWekanChapter}
+              pinkBorder={!isGraphQLChapter}
             />
             <OptionalSteps
               location={location}
               steps={steps.advanced}
               small={true}
               showDuration={false}
-              mainPink={!isWekanChapter}
+              mainPink={!isGraphQLChapter}
               onClickLink={this.props.onClickLink}
             />
             {showChoose
               ? <ChooseTutorialStep active={isChooseTutorial} onClick={this.props.onClickLink} />
               : <div>
-                  {tutorialTitle &&
-                    <TutorialTitleStep
-                      title={tutorialTitle}
-                  pinkLine={!isWekanChapter}
-                    />}
-                  <Steps
-                    steps={selectedSteps}
-                    small={true}
-                    showDuration={false}
-                    location={location}
-                    onClickLink={this.props.onClickLink}
-                  />
-                </div>}
+                {tutorialTitle &&
+                  <TutorialTitleStep
+                    title={tutorialTitle}
+                    pinkLine={!isGraphQLChapter}
+                  />}
+                <Steps
+                  steps={selectedSteps}
+                  small={true}
+                  showDuration={false}
+                  location={location}
+                  onClickLink={this.props.onClickLink}
+                />
+              </div>}
           </div>
         </div>
       </div>
@@ -131,5 +132,8 @@ export default class Sidebar extends React.Component<Props, {}> {
 
   private setRef = ref => {
     this.ref = ref
+    if (this.props.onRef) {
+      this.props.onRef(ref)
+    }
   }
 }

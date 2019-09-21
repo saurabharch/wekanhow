@@ -1,11 +1,13 @@
 import * as React from 'react'
-import { Step } from '../types'
+import { MarkdownRemark, Step } from '../types'
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 import Icon from 'graphcool-styles/dist/components/Icon/Icon'
 import * as cn from 'classnames'
 import Sidebar from './Tutorials/Sidebar'
 
 interface Props {
   steps: { [key: string]: Step[] }
+  post?: MarkdownRemark
   location: any
 }
 
@@ -14,12 +16,18 @@ interface State {
 }
 
 export default class MobileMenu extends React.Component<Props, State> {
+  private sidebarRef: void | HTMLElement
+
   constructor(props) {
     super(props)
 
     this.state = {
       menuOpen: false,
     }
+  }
+
+  componentWillUnmount() {
+    clearAllBodyScrollLocks()
   }
 
   render() {
@@ -89,7 +97,9 @@ export default class MobileMenu extends React.Component<Props, State> {
           <Sidebar
             steps={steps}
             location={location}
+            post={this.props.post}
             onClickLink={this.toggleMenu}
+            onRef={this.setSidebarRef}
           />
           <div className="oval" onClick={this.toggleMenu} />
           <div className="close" onClick={this.toggleMenu}>
@@ -107,7 +117,27 @@ export default class MobileMenu extends React.Component<Props, State> {
     )
   }
 
+  private setSidebarRef = ref => {
+    this.sidebarRef = ref
+    if (this.state.menuOpen) {
+      disableBodyScroll(this.sidebarRef)
+    } else {
+      enableBodyScroll(this.sidebarRef)
+    }
+  }
+
   private toggleMenu = () => {
-    this.setState(state => ({ menuOpen: !state.menuOpen }))
+    this.setState(
+      state => ({ menuOpen: !state.menuOpen }),
+      () => {
+        if (this.sidebarRef) {
+          if (this.state.menuOpen) {
+            disableBodyScroll(this.sidebarRef)
+          } else {
+            enableBodyScroll(this.sidebarRef)
+          }
+        }
+      }
+    )
   }
 }
