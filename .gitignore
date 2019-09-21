@@ -13,5 +13,4 @@ lib/
 public
 public*
 .devcontainer
-yarn.lock
 package-lock.json
